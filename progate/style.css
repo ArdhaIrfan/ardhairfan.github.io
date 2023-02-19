@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-white: rgb(247, 247, 247);
+    --text-blue: rgb(133, 188, 248);
+    --dark-bg: #404146;
+    --soft-bg: #f4f4f4;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* ========== HEADER ========== */
+header nav {
+    color: var(--text-white);
+    background-color: var(--dark-bg);
+    padding: 25px 50px;
+    display: flex;
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    vertical-align: middle;
+    list-style: none;
+}
+
+header li h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+header li a {
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: var(--text-blue);
+}
+
+header .menu-icon {
+    float: right;
+    display: none;
+}
+
+.clear {
+    clear: left;
+}
+
+/* ========== HERO ========== */
+.hero {
+    text-align: center;
+    margin: 70px 0;
+}
+
+.hero .greeting {
+    color: var(--dark-bg);
+    font-size: 80px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.hero .greeting h1 {
+    margin: 0;
+}
+
+.hero .greeting span {
+    font-size: 150px;
+    font-family: 'Varela Round', sans-serif;
+    color: #f1d00e;
+}
+
+.hero .illustration h2 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark-bg);
+    font-weight: 200;
+    font-size: 55px;
+    margin: 10px;
+}
+
+.hero img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* ========== MAIN ========== */
+main {
+    background-color: var(--soft-bg);
+    color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 140px;
+}
+
+main h4 {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+main p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+/* ========== PROJECT ========== */
+.project {
+    color: var(--dark-bg);
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.project h4 {
+    font-weight: 800;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.project .list {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-evenly;
+}
+
+.project img {
+    width: 280px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project h5 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/* ========== CONTACT-ME ========== */
+.contact-me {
+    background-color: var(--soft-bg);
+    color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+}
+
+.contact-me h4 {
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 700px;
+    row-gap: 35px;
+}
+
+.contact-me input, .contact-me textarea, .contact-me button {
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 50px; */
+    border-radius: 12px;
+    border: none;
+    padding: 18px;
+    font-size: 15px;
+}
+
+.contact-me button {
+    margin: 0 auto;
+    cursor: pointer;
+    width: 400px;
+    background-color: #f7e989;
+    font-size: 20px;
+    color: var(--dark-bg);
+}
+
+.contact-me button:hover{
+    background-color: #ffe44e;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 40px;
+    padding-bottom: 100px;
+}
+
+footer h5 {
+    font-size: 30px;
+    /* float: left; */
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    float: right;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 18px;
+    margin: 10px 0;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 14px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: rgb(223, 223, 223);
+}
