@@ -1,0 +1,14 @@
+.portfolio {
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        row-gap: 55px;
+        justify-content: center;
+    }
+}

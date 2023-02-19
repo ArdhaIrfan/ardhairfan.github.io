@@ -118,6 +118,11 @@
         margin-left: 110px;
     }
 
+    .hero {
+        height: 100%;
+        padding: 30px 0;
+    }
+
     .hero .greeting {
         line-height: 50px;
         font-size: 45px;
