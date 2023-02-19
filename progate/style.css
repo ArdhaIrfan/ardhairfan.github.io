@@ -208,6 +208,16 @@ footer h5 {
     padding: 0;
 }
 
+footer h5 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer h5 a:hover {
+    color: var(--dark-bg);
+}
+
 footer ul {
     float: right;
     margin: 0;
