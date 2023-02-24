@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --white: #F9FBFE;
+    --blue: #0F8B8D;
+    --orange: #EC9A29;
+    --red: #A8201A;
+    --dark-blue: #143642;
+}
+
+.clear {
+    clear: left;
+}
+
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--blue);
+}
+
+/* =========================== HEADER =========================== */
+header {
+    background-color: var(--blue);
+    padding: 20px 80px;
+}
+
+header .logo {
+    float: left;
+}
+
+header ul {
+    display: flex;
+    float: right;
+    column-gap: 60px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    list-style: none;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: large;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* =========================== HERO =========================== */
+.hero {
+    background-image: url(../img/Coffe\ Header.png);
+    background-color: rgb(20, 54, 66, .7);
+    background-blend-mode: multiply;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    color: var(--white);
+    border-radius: 0 0 30px 30px;
+}
+
+.hero .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-size: 900;
+    line-height: 84px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+/* =========================== MAIN =========================== */
+main {
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+main .who, main .showcase, main .hangout {
+    display: flex;
+    column-gap: 100px;
+}
+
+main .showcase {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main .showcase .caption {
+    text-align: end;
+}
+
+main .who img, main .showcase img, main .hangout img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+main .who img {
+    height: 400px;
+    width: 300px;
+}
+
+main .showcase img {
+    height: 300px;
+    width: 300px;
+}
+
+main .hangout img {
+    height: 350px;
+    width: 300px;
+}
+
+main .who h3, main .showcase h3, main .hangout h3 {
+    display: inline;
+    border-bottom: var(--orange) 5px solid;
+    padding-bottom: 20px;
+}
+
+main .who p, main .showcase p, main .hangout p {
+    padding-top: 30px;
+}
+
+button {
+    width: 330px;
+    height: 60px;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 55px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 200px;
+}
+
+/* =========================== FIND US =========================== */
+.find-us {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.find-us h3 {
+    margin-bottom: 50px;
+}
+
+.find-us h3 span {
+    color: var(--orange);
+}
+
+.find-us .gallery {
+    display: grid;
+    column-gap: 100px;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+/* =========================== FIND US =========================== */
+.ask-us {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* =========================== FOOTER =========================== */
+footer {
+    padding: 50px 100px;
+    padding-bottom: 100px;
+    background-color: var(--dark-blue);
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo-icon {
+    float: left;
+}
+
+footer svg {
+    color: var(--white);
+}
+
+footer .logo-icon div {
+    color: var(--white);
+    display: flex;
+    column-gap: 10px;
+    padding: 20px 0;
+}
+
+footer .page-list {
+    display: flex;
+    float: right;
+    column-gap: 40px;
+}
+
+footer .page-list ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 0;
+}
+
+footer .page-list li {
+    list-style: none;
+    color: var(--orange);
+}
+
+footer .page-list li a {
+    color: var(--white);
+    text-decoration: none;
+}
