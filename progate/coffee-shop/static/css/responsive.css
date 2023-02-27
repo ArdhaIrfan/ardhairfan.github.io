@@ -19,6 +19,10 @@
         flex-direction: column;
     }
 
+    section {
+        padding: 50px 5%;
+    }
+
     footer {
         flex-direction: column;
     }
@@ -41,10 +45,23 @@
         row-gap: 10px;
     }
 
+    main .who, main .showcase, main .hangout {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    main .who img, main .showcase img, main .hangout img {
+        margin: auto;
+    }
+
     .find-us .gallery {
         column-gap: 40px;
         row-gap: 40px;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .find-us .gallery img {
+        margin: auto;
     }
 
     footer {
@@ -74,7 +91,15 @@
     }
 
     .find-us .gallery {
-        grid-template-columns: 1fr;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .find-us .gallery img {
+        width: 100%;
+        height: auto;
     }
 
     footer, footer .page-list {

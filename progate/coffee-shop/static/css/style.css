@@ -45,10 +45,11 @@ button, input.submit {
     border: none;
     font-size: 17px;
     cursor: pointer;
+    transition: all .2s;
 }
 
 button:hover, input.submit:hover {
-    background-color: #d32e25;
+    background-color: #c62b22;
 }
 
 section {
@@ -93,7 +94,7 @@ header ul li {
     line-height: 35px;
 }
 
-header ul a {
+header ul a, button a {
     text-decoration: none;
     color: var(--white);
     transition: all .2s;
@@ -180,7 +181,8 @@ main .hangout img {
 main .who h3, main .showcase h3, main .hangout h3 {
     display: inline;
     border-bottom: var(--orange) 5px solid;
-    padding-bottom: 20px;
+    line-height: 80px;
+    padding-bottom: 10px;
 }
 
 main .who p, main .showcase p, main .hangout p {
@@ -208,6 +210,10 @@ main .who p, main .showcase p, main .hangout p {
     column-gap: 50px;
     row-gap: 50px;
     grid-template-columns: auto auto auto;
+}
+
+.find-us .gallery img {
+    height: 270px;
 }
 
 /* =========================== ASK US =========================== */
