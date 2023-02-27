@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --white: #F9FBFE;
+    --blue: #0F8B8D;
+    --orange: #EC9A29;
+    --red: #A8201A;
+    --dark-blue: #143642;
+}
+
+main {
+    row-gap: 0;
+    text-align: center;
+    padding: 120px;
+}
+
+main h1 {
+    font-size: 48px;
+}
+
+main > p {
+    color: var(--dark-blue);
+    font-size: 20px;
+    margin: 0;
+}
+
+main .menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+main .menu .item {
+    box-sizing: border-box;
+    z-index: 10;
+    background-image: url(../img/Coffee\ background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    width: 210px;
+    height: 210px;
+}
+
+main .menu a {
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 20px;
+}
+
+main .menu .item h6, main .menu .item p {
+    transition: all .3s;
+}
+
+main .menu .item:hover h6, main .menu .item:hover p {
+    transform: translate3d(0, 115px, 0);
+}
+
+main .menu h6 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+main .menu p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+main .menu img {
+    width: 140px;
+    transition: all .3s;
+}
+
+main .menu .item:hover img {
+    transform: translate3d(0, -65px, 0) scale(1.2);
+}
+
+/* main .menu .item-bg {
+    margin-top: -200px;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+} */
