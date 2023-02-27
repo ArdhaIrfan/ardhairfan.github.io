@@ -36,7 +36,7 @@ main {
     row-gap: 100px;
 }
 
-button {
+button, input.submit {
     min-width: 250px;
     height: 55px;
     color: var(--white);
@@ -45,6 +45,10 @@ button {
     border: none;
     font-size: 17px;
     cursor: pointer;
+}
+
+button:hover, input.submit:hover {
+    background-color: #d32e25;
 }
 
 section {
@@ -92,6 +96,11 @@ header ul li {
 header ul a {
     text-decoration: none;
     color: var(--white);
+    transition: all .2s;
+}
+
+header ul a:hover {
+    color: var(--orange);
 }
 
 header .menu-icon {
@@ -195,12 +204,13 @@ main .who p, main .showcase p, main .hangout p {
 
 .find-us .gallery {
     display: grid;
-    column-gap: 100px;
+    justify-content: center;
+    column-gap: 50px;
     row-gap: 50px;
     grid-template-columns: auto auto auto;
 }
 
-/* =========================== FIND US =========================== */
+/* =========================== ASK US =========================== */
 .ask-us {
     text-align: center;
     padding-bottom: 100px;
@@ -227,7 +237,7 @@ footer svg {
 footer .logo-icon div {
     color: var(--white);
     display: flex;
-    column-gap: 10px;
+    column-gap: 5px;
     padding: 20px 0;
 }
 
@@ -252,4 +262,9 @@ footer .page-list li {
 footer .page-list li a {
     color: var(--white);
     text-decoration: none;
+    transition: all .2s;
+}
+
+footer .page-list li a:hover {
+    color: var(--orange);
 }
