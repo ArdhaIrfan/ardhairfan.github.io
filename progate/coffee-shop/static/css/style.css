@@ -29,6 +29,21 @@ h3 {
     color: var(--blue);
 }
 
+button {
+    min-width: 250px;
+    height: 55px;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 55px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 200px;
+}
+
 /* =========================== HEADER =========================== */
 header {
     background-color: var(--blue);
@@ -156,21 +171,6 @@ main .who h3, main .showcase h3, main .hangout h3 {
 
 main .who p, main .showcase p, main .hangout p {
     padding-top: 30px;
-}
-
-button {
-    width: 330px;
-    height: 60px;
-    color: var(--white);
-    background-color: var(--red);
-    border-radius: 55px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-section {
-    padding: 50px 200px;
 }
 
 /* =========================== FIND US =========================== */
