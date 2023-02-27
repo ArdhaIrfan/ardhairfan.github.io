@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+    main .loc-map {
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    main.store-loc {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    main .loc-map {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    header ul a {
+        display: none;
+    }
+
+    header .menu-icon {
+        display: block;
+    }
+
+    footer, footer .page-list {
+        flex-direction: column;
+    }
+
+    main .loc-map {
+        height: 400px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+:root {
+    --white: #F9FBFE;
+    --blue: #0F8B8D;
+    --orange: #EC9A29;
+    --red: #A8201A;
+    --dark-blue: #143642;
+}
+
+main {
+    flex-direction: row;
+    padding: 120px 10%;
+    padding-bottom: 100px;
+    column-gap: 50px;
+}
+
+main .address {
+    padding-top: 10px;
+}
+
+main .loc-map {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    margin: auto;
+}
+
+main .address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+main .address .card {
+    border: 1px solid #D2D2D2;
+    border-radius: 20px;
+    padding: 20px 30px;
+    transition: all .2s;
+    max-width: 400px;
+}
+
+main .address .card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+main .address h3 {
+    font-size: 24px;
+    color: var(--dark-blue);
+}
