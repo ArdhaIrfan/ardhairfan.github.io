@@ -101,7 +101,7 @@ header ul a, button a {
 }
 
 header ul a:hover {
-    color: var(--orange);
+    color: var(--dark-blue);
 }
 
 header .menu-icon {
