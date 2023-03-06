@@ -8,16 +8,15 @@ button.map(button => {
         console.log(e);
         console.log(e.target);
         console.log(e.target.innerText);
-        console.log(e.target.innerHTML);
         if(equal == 1) {
             display.innerText = '';
             equal = 0;
         }
-        switch(e.target.innerHTML) {
+        switch(e.target.innerText) {
             case 'C':
                 display.innerText = '';
                 break;
-            case '<i class="fa-solid fa-delete-left"></i>':
+            case '←':
                 if(display.innerText) {
                     display.innerText = display.innerText.slice(0, -1);
                 }
