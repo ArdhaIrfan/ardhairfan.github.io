@@ -21,21 +21,21 @@
     <header>
         <nav>
             <a href="index.html" class="logo"><img src="static/img/Logo White.png" alt="logo" height="40px"></a>
-            <ul>
-                <a href="menu.html">
-                    <li>Products</li>
-                </a>
-                <a href="store.html">
-                    <li>Store</li>
-                </a>
-                <a href="contact.html">
-                    <li>Contact</li>
-                </a>
-                <a href="#" class="menu-icon"><li><i class="fa-solid fa-bars"></i></li></a>
+            <ul class="display">
+                <a href="menu.html"><li>Products</li></a>
+                <a href="store.html"><li>Store</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="#" id="menu-icon" class="menu-icon"><li class="menu-icon"><i class="fa-solid fa-bars"></i></li></a>
             </ul>
             <div class="clear"></div>
         </nav>
     </header>
+    <ul id="hidden">
+        <a href="menu.html"><li>Products</li></a>
+        <a href="store.html"><li>Store</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+        <!-- <a href="#" class="menu-icon"><li class="menu-icon"><i class="fa-solid fa-bars"></i></li></a> -->
+    </ul>
 
     <!-- Main Section -->
     <main>
@@ -137,6 +137,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>

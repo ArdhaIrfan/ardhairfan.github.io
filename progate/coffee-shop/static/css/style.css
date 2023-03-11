@@ -109,6 +109,10 @@ header .menu-icon {
     color: var(--white);
 }
 
+ul#hidden {
+    display: none;
+}
+
 /* =========================== HERO =========================== */
 .hero {
     background-image: url(../img/Coffe\ Header.png);

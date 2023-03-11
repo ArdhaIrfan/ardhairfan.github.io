@@ -12,7 +12,6 @@
     <!-- Font Awesome Icon CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
     <title>Aroma Bumi</title>
 </head>
 
@@ -21,15 +20,21 @@
     <header class="transparent">
         <nav>
             <a href="index.html" class="logo"><img src="static/img/Logo White.png" alt="logo" height="40px"></a>
-            <ul>
+            <ul class="display">
                 <a href="menu.html"><li>Products</li></a>
                 <a href="store.html"><li>Store</li></a>
                 <a href="contact.html"><li>Contact</li></a>
-                <a href="#" class="menu-icon"><li class="menu-icon"><i class="fa-solid fa-bars"></i></li></a>
+                <a href="#" id="menu-icon" class="menu-icon"><li class="menu-icon"><i class="fa-solid fa-bars"></i></li></a>
             </ul>
             <div class="clear"></div>
         </nav>
     </header>
+    <ul id="hidden">
+        <a href="menu.html"><li>Products</li></a>
+        <a href="store.html"><li>Store</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+        <!-- <a href="#" class="menu-icon"><li class="menu-icon"><i class="fa-solid fa-bars"></i></li></a> -->
+    </ul>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -125,6 +130,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>

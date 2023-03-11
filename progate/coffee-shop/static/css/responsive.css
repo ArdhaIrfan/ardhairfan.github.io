@@ -1,3 +1,11 @@
+:root {
+    --white: #F9FBFE;
+    --blue: #0F8B8D;
+    --orange: #EC9A29;
+    --red: #A8201A;
+    --dark-blue: #143642;
+}
+
 @media (max-width: 992px) {
     main .loc-map {
         height: 400px;
@@ -82,12 +90,43 @@
         padding: 20px 40px;
     }
 
-    header ul a {
+    header ul.display a {
         display: none;
     }
 
-    header .menu-icon {
+    header ul.display .menu-icon {
         display: block;
+    }
+
+    ul#hidden {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        row-gap: 0;
+        top: 75px;
+        padding: 20px;
+        z-index: 100;
+        text-align: end;
+        margin: 0;
+        padding: 0;
+        background-color: var(--blue);
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    ul#hidden li {
+        list-style: none;
+    }
+
+    ul#hidden a {
+        color: var(--white);
+        text-decoration: none;
+        padding: 15px 35px;
+    }
+
+    ul#hidden a:hover {
+        background-color: #097577;
     }
 
     .find-us .gallery {
