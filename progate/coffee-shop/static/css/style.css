@@ -104,6 +104,10 @@ header ul a:hover {
     color: var(--dark-blue);
 }
 
+header.transparent ul a:hover {
+    color: var(--orange);
+}
+
 header .menu-icon {
     display: none;
     color: var(--white);
