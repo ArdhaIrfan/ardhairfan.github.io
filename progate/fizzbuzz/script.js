@@ -22,7 +22,7 @@ button.addEventListener('click', (e) => {
             child.classList.add('blue');
             parent.appendChild(child);
             word.innerText = 'Buzz!';
-            word.style.color = 'rgb(44, 163, 214)';
+            word.style.color = 'rgb(59, 175, 225)';
         } else if (number%3 == 0) {
             child.innerText = "Fizz!";
             child.classList.add('red');
@@ -36,7 +36,11 @@ button.addEventListener('click', (e) => {
             word.style.color = 'white';
         }
     } else {
-        child.innerText = "Not a valid number";
+        child.innerText = "Invalid";
         parent.appendChild(child);
+        word.innerText = "Invalid";
+        word.style.color = 'white';
     }
+
+    // document.getElementById('masukan').value = '';
 })
