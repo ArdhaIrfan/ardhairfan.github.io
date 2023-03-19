@@ -86,9 +86,15 @@
     <!-- Contact Me Section -->
     <section class="contact-me">
         <h4>Hubungi Saya</h4>
-        <form action="/" method="get">
-            <input type="text" placeholder="Email (Diperlukan)">
-            <textarea name="message" id="message" cols="30" rows="3" placeholder="Message (Diperlukan)"></textarea>
+        <form id="form" action="" method="get">
+            <div class="input-control">
+                <input class="email" id="email" type="text" placeholder="Email (Diperlukan)">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <textarea class="message" name="message" id="message" cols="30" rows="3" placeholder="Message (Diperlukan)"></textarea>
+                <div class="error"></div>
+            </div>
             <button type="submit">Kirim</button>
         </form>
     </section>
@@ -104,7 +110,7 @@
         <div class="clear"></div>
     </footer>
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 
 </html>
