@@ -8,10 +8,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="responsive.css">
 
     <!-- Font Awesome Icon CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Progate Front-End Exercise 1</title>
 </head>
@@ -57,28 +60,33 @@
     <!-- Project Section -->
     <section class="project">
         <h4>Proyek Contoh</h4>
-        <div class="list">
-            <div class="card">
-                <a href="final-html-css/index.html">
-                    <img src="static/1.png" alt="Proyek 1">
-                    <h5>Image 1</h5>
-                </a>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img id="image1" src="static/1.png" alt="image 1" draggable="false">
+              <img id="image2" src="static/2.png" alt="image 2" draggable="false">
+              <img id="image3" src="static/3.png" alt="image 3" draggable="false">
+              <img id="image4" src="static/1.png" alt="image 4" draggable="false">
+              <img id="image5" src="static/2.png" alt="image 5" draggable="false">
+              <img id="image6" src="static/3.png" alt="image 6" draggable="false">
+              <img id="image7" src="static/1.png" alt="image 7" draggable="false">
+              <img id="image8" src="static/2.png" alt="image 8" draggable="false">
+              <img id="image9" src="static/3.png" alt="image 9" draggable="false">
             </div>
-            <div class="card">
-                <img src="static/2.png" alt="Proyek 2">
-                <h5>Image 2</h5>
-            </div>
-            <div class="card">
-                <img src="static/3.png" alt="Proyek 3">
-                <h5>Image 3</h5>
-            </div>
-        </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
     </section>
+
+    <div id="modalId" class="modal">
+        <span class="close">&times;</span>
+        <img src="static/1.png" id="image2" class="modal-content">
+        <div id="caption"></div>
+    </div>
 
     <!-- Contact Me Section -->
     <section class="contact-me">
         <h4>Hubungi Saya</h4>
-        <form action="">
+        <form action="/" method="get">
             <input type="text" placeholder="Email (Diperlukan)">
             <textarea name="message" id="message" cols="30" rows="3" placeholder="Message (Diperlukan)"></textarea>
             <button type="submit">Kirim</button>
@@ -95,6 +103,8 @@
         </ul>
         <div class="clear"></div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
