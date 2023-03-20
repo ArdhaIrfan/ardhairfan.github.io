@@ -39,9 +39,3 @@ function showPokemon(pokemon) {
 
     card.classList.add('show');
 }
-
-// function fetchPokemons(number) {
-//     for (let i = 1; i <= number; i++) {
-//         fetchPokemon(i);
-//     }
-// }
