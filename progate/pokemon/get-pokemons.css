@@ -19,14 +19,35 @@ main {
     display: grid;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 50px 0;
 }
 
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(130, 76, 167);
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(159, 94, 202);
+}
+
 .pokemon {
+    min-width: 150px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    border: 2px solid;
+}
+
+@media(max-width: 768px) {
+    main {
+        grid-template-columns: auto auto auto;
+    }
 }
 
 @media(max-width: 600px) {

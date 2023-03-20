@@ -1,5 +1,4 @@
 const poke_container = document.getElementById('poke_container');
-const pokemons_number = 36;
 const bg_color = {
 	fire: '#E69D8D',
 	grass: '#8DD694',
@@ -35,7 +34,7 @@ const border_color = {
 
 const main_types = Object.keys(bg_color);
 
-const fetchPokemons = async () => {
+const fetchPokemons = async (pokemons_number) => {
     for (let i=1; i<=pokemons_number; i++) {
         await getPokemon(i);
     }
@@ -54,13 +53,23 @@ function createPokemonCard(pokemon) {
     const pokemonEl = document.createElement('div');
     pokemonEl.classList.add('pokemon');
 
+	const poke_id = pokemon.id;
     const poke_types = pokemon.types.map(el => el.type.name);
-    const type = main_types.find(type => poke_types.indexOf(type) > -1);
+    const type = main_types.find(type => poke_types.indexOf(type) > -1)[0].toUpperCase() + pokemon.name.slice(1);
+	const typee = main_types.find(type => poke_types.indexOf(type) > -1);
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
     const image = pokemon.sprites.front_default;
+	const bgcolor = bg_color[typee];
+	const bdcolor = border_color[typee];
+
+	console.log(typee);
+
+	pokemonEl.style.backgroundColor = bgcolor;
+	pokemonEl.style.borderColor = bdcolor;
 
     const pokeInnerHTML = `
         <div class="img-container">
+			<p style="margin-top: 0;">${poke_id}</p>
             <img src="${image}">
             <p>${name}</p>
             <small class="type">Type: <span>${type}</small>
