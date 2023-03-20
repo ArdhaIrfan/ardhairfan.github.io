@@ -26,7 +26,7 @@ function showPokemon(pokemon) {
     const typeWord = document.createElement('h6');
 
     nameElement.innerText = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
-    numberElement.innerText = pokemon.id;
+    numberElement.innerText = `(${pokemon.id})`;
     imageElement.src = pokemon.sprites.front_default;
     typeWord.innerText = 'Type';
     typeElement.innerText = pokemon.types.map(el => el.type.name);
