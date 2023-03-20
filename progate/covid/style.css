@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(35, 33, 42);
+    color: rgb(206, 162, 255);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+main {
+    display: flex;
+    column-gap: 20px;
+}
+
+.overview {
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(42, 40, 49);
+}
+
+.global-data {
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(42, 40, 49);
+    text-align: center;
+    position: relative;
+}
+
+.confirmed {
+    text-align: start;
+}
+
+.death {
+    text-align: center;
+}
+
+.recovered {
+    text-align: end;
+}
+
+/* .confirmed {
+    z-index: 2;
+    position: absolute;
+    right: 25%;
+    top: 0%;
+}
+
+.death {
+    z-index: 2;
+    position: absolute;
+    left: 15%;
+    top: 45%;
+}
+
+.recovered {
+    z-index: 2;
+    position: absolute;
+    right: 15%;
+    top: 70%;
+} */
+
+/* .circle1, .circle2, .circle3 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: rgb(57, 54, 66);
+}
+
+.circle1 {
+    right: 27%;
+    top: -18%;
+}
+
+.circle2 {
+    left: 12%;
+    top: 27%;
+}
+
+.circle3 {
+    right: 16%;
+    top: 50%;
+} */
+
+.countries {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(42, 40, 49);
+}
+
+@media(max-width: 600px) {
+    main {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .overview {
+        width: 100%;
+    }
+    
+    .global-data {
+        height: 300px;
+        width: 100%;
+    }
+}
