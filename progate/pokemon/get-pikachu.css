@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    z-index: -9;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: large;
+    padding: 12px 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 242, 128);
+    transition: all .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(231, 208, 0);
+}
+
+.card {
+    display: none;
+    height: 350px;
+    width: 240px;
+    background-color: rgb(255, 255, 122);
+    border-radius: 20px;
+    margin: 30px auto;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.card.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 20px;
+}
+
+.card h4 {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.card h6 {
+    margin: 10px 0;
+}
+
+.card h3 {
+    margin: 0;
+}

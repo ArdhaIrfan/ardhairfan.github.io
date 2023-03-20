@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Progate</title>
+</head>
+<body>
+  <h1>Mulai menggunakan AJAX</h1>
+
+  <button type="button" onclick="fetchData()">Fetch data</button>
+  <br>
+  <br>
+  <a href="show-pokemon.html">Show Pokemon</a>
+
+  <script>
+    function fetchData() {
+      const xhttp = new XMLHttpRequest();
+      const url = "https://pokeapi.co/api/v2/pokemon-form/25/";
+      const httpMethod = "GET";
+      xhttp.onload = function() {
+        console.log(this.responseText);
+      }
+      xhttp.open(httpMethod, url);
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>
