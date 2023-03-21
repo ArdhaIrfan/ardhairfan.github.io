@@ -13,14 +13,37 @@ fetch('https://api.covid19api.com/summary')
 
     confirmedNumber.innerText = totalCases;
     deathNumber.innerText = totalDeaths;
-    recoveredNumber.innerText = totalRecovered;
+    recoveredNumber.innerText = totalCases - totalDeaths;
 
     console.log(confirmedNumber.getElementsByTagName("p"));
 
     console.log(data);
-    console.log(totalCases);
-    console.log(totalDeaths);
-    console.log(totalRecovered);
-    
+    // console.log(totalCases);
+    // console.log(totalDeaths);
+    // console.log(totalRecovered);
+    console.log(data.Countries[0]);
+
+    const parent = document.getElementById('list');
+
+    const createList = (country) => {
+      const child = document.createElement('li');
+
+      const childInnerHTML = `
+          <div class="country-name">
+            <h4>${country.Country}</h4>
+          </div>
+          <div class="country-data">
+            <p class="conf">${country.TotalConfirmed}</p>
+            <p class="deat">${country.TotalDeaths}</p>
+          </div>
+      `;
+
+      child.innerHTML = childInnerHTML;
+      parent.appendChild(child);
+    };
+
+    for (i = 0; i < data.Countries.length; i++) {
+      createList(data.Countries[i]);
+    }
   })
 .catch(error => console.error(error));

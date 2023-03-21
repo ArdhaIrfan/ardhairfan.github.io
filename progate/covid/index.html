@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,21 @@
 
     <title>Covid-19 Data</title>
 </head>
+
 <body>
     <h1>Covid-19 Data</h1>
 
     <main>
         <div class="overview">
-            <h2>About Covid-19</h2>
-            <p>What is the summary overview of COVID-19?
-                Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention.</p>
+            <div>
+                <img src="covid.jpg" alt="covid">
+                <h2>About Covid-19</h2>
+                <p>
+                    Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Most people
+                    infected with the virus will experience mild to moderate respiratory illness and recover without
+                    requiring special treatment. However, some will become seriously ill and require medical attention.
+                </p>
+            </div>
         </div>
         <div class="global-data">
             <div class="confirmed">
@@ -39,9 +47,23 @@
     </main>
 
     <section class="countries">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestias officiis dolorem doloribus magni, perferendis, ut exercitationem qui, excepturi quam nobis! Optio laudantium aperiam, ullam velit voluptatibus reiciendis similique. Placeat.</p>
+        <div class="table-head">
+            <h2>By Countries</h2>
+            <div>
+                <h5>Country Name</h5>
+                <div>
+                    <h5 class="c">Confirmed</h5>
+                    <h5 class="d">Deaths</h5>
+                </div>
+            </div>
+        </div>
+        <div class="country-wrapper">
+            <ul id="list">
+            </ul>
+        </div>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
