@@ -121,6 +121,10 @@ main {
     background-color: var(--sect-bg);
 }
 
+.countries h2 {
+    margin-bottom: 10px;
+}
+
 .countries .table-head div {
     display: flex;
     justify-content: space-between;
