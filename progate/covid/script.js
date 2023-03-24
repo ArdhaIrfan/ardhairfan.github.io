@@ -46,4 +46,4 @@ fetch('https://api.covid19api.com/summary')
       createList(data.Countries[i]);
     }
   })
-.catch(error => console.error(error));
+  .catch(error => console.error(error));

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- View -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="snow_weather.png" />
+    <meta property="og:url" content="https://ardhairfan.github.io/progate/weather-forecast" />
+    <meta property="og:title" content="Weather Forecast Website" />
+    <meta property="og:description" content="See weather forecast in your area." />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../profile-rounded.png" type="image/png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1><span>Weather</span> Forecast</h1>
+        </div>
+        <div class="search-field">
+            <input type="text" name="city-name" id="city-name" placeholder="Search weather forecast of your city">
+            <button onClick="searchWeather()">search</button>
+        </div>
+    </header>
+    <main class="content">
+        <div id="city-description"></div>
+        <div class="weather">
+            <div id="current-weather"></div>
+            <div id="weather-forecast"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+<!-- <body>
+    <div id="header">
+        <h1>Weather Forecast</h1>
+    </div>
+
+    <main>
+        <button onclick="getWeatherForecast('Jakarta')">click to fetch</button>
+    </main>
+
+    <script src="script.js"></script>
+</body> -->
+
+</html>
