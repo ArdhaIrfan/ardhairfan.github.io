@@ -83,31 +83,13 @@ const displayWeatherForecast = (weatherData) => {
 
 const searchWeather = async () => {
     const cityName = document.getElementById("city-name").value;
+    if (!cityName) {
+        return null;
+    }
     const weatherData = await getWeatherForecast(cityName);
+    if (!weatherData.error) {
     displayCityName(weatherData);
     displayCurrentWeather(weatherData);
     displayWeatherForecast(weatherData);
+    }
   }
-
-
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'fa464f6a67msh3ddccfcbb2425b2p1602c1jsnb957a069344d',
-// 		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-// 	}
-// };
-
-// function fetching() {
-//     fetch('https://weatherapi-com.p.rapidapi.com/forecast.json?q=Jakarta&days=3', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-//     .then(response => {
-//         forecast(response)
-//     })
-// 	.catch(err => console.error(err));
-// }
-
-// const forecast = (data) => {
-
-// }
