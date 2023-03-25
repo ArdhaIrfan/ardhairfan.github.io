@@ -11,27 +11,39 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="sport.jpg" />
     <meta property="og:url" content="https://ardhairfan.github.io/progate/search-recipes" />
-    <meta property="og:title" content="Search Recipes" />
-    <meta property="og:description" content="Find your desired food recipes." />
+    <meta property="og:title" content="Find Recipes" />
+    <meta property="og:description" content="Food recipes for your next cooking." />
 
     <!-- Favicon -->
     <link rel="icon" href="../../profile-rounded.png" type="image/png">
 
+    <!-- Font Awesome Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <title>Search for Recipes</title>
+    <title>Find Recipes</title>
 </head>
 
 <body>
     <header>
-        <h1>Search for Recipes</h1>
-        <p>Find food recipes for your next cooking.</p>
+        <div>
+            <h1><i>Find Recipes</i></h1>
+            <p>Food recipes for your next cooking.</p>
+            <div class="input-wrapper">
+                <input type="text" id="food-name" name="food-name" placeholder="Food Name...">
+                <button onclick="searchRecipes()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
     </header>
 
+        <img class="bg" src="bg.jpg" alt="Background">
+
+
     <main>
-        <input type="text" id="food-name" name="food-name" placeholder="Food Name...">
-        <button onclick="searchRecipes()">Get Recipes</button>
 
         <div id="food-text" class="food-text">
         </div>
