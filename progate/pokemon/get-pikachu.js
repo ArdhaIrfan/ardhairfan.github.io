@@ -1,7 +1,7 @@
 const pokeContainer = document.getElementById('card');
 const fetching = document.getElementById('button');
 
-fetching.addEventListener('click', fetchPokemon);
+fetching.addEventListener('click', fetchPokemon(25));
 
 const fetchPokemon = (id) => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
