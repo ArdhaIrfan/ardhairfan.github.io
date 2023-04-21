@@ -7,26 +7,67 @@
 }
 
 main {
-    row-gap: 0;
+    column-gap: 40px;
     text-align: center;
-    padding-top: 120px;
+    padding: 110px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-main h1 {
-    font-size: 48px;
+main .sidebar {
+    margin-top: 30px;
+    padding: 40px;
+    border: solid 2px #bababa;
+    border-radius: 20px;
+    width: 20%;
+    text-align: left;
 }
 
-main > p {
+main .sidebar h4 {
+    margin: 0;
+    font-size: x-large;
+    font-weight: bold;
+    color: #0F8B8D;
+}
+
+main .sidebar div {
+    margin: 30px 0;
+    border-left: solid 3px #EC9A29;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+main .sidebar p {
+    margin: 0;
+    cursor: pointer;
+}
+
+main .sidebar p.bold {
+    font-weight: bold;
+}
+
+main .sidebar p:hover {
+    font-weight: bold;
+}
+
+main .product-list h1 {
+    font-size: 40px;
+}
+
+main .product-list > p {
     color: var(--dark-blue);
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
 }
 
 main .menu {
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 40px;
-    row-gap: 40px;
+    column-gap: 30px;
+    row-gap: 30px;
     padding-top: 50px;
     justify-content: center;
 }
@@ -40,14 +81,17 @@ main .menu .item {
     background-size: cover;
     padding: 20px;
     border-radius: 20px;
-    width: 210px;
-    height: 210px;
+    width: 190px;
+    height: 190px;
+    cursor: pointer;
 }
 
 main .menu a {
     text-decoration: none;
     color: var(--white);
     border-radius: 20px;
+    width: min-content;
+    margin: auto;
 }
 
 main .menu .item h6, main .menu .item p {
@@ -55,33 +99,47 @@ main .menu .item h6, main .menu .item p {
 }
 
 main .menu .item:hover h6, main .menu .item:hover p {
-    transform: translate3d(0, 115px, 0);
+    transform: translate3d(0, 95px, 0);
+    margin-top: 5px;
 }
 
 main .menu h6 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
 }
 
 main .menu p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px 0;
 }
 
 main .menu img {
-    width: 140px;
+    width: 120px;
     transition: all .3s;
 }
 
 main .menu .item:hover img {
-    transform: translate3d(0, -65px, 0) scale(1.2);
+    transform: translate3d(0, -60px, 0) scale(1.1);
 }
 
-/* main .menu .item-bg {
-    margin-top: -200px;
-    height: 100%;
-    z-index: -1;
-    width: 100%;
-} */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    main .sidebar {
+        width: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    main {
+        transform: scale(.9);
+        transform-origin: 50% 0;
+        padding: 110px 0;
+    }
+}

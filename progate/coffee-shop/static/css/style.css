@@ -94,6 +94,10 @@ header ul li {
     line-height: 35px;
 }
 
+header ul .active li {
+    border-bottom: solid 3px #EC9A29;
+}
+
 header ul a, button a {
     text-decoration: none;
     color: var(--white);
@@ -151,6 +155,17 @@ header .menu-icon {
 main .who, main .showcase, main .hangout {
     display: flex;
     column-gap: 100px;
+    opacity: 0;
+    filter: blur(2px);
+    transition: all .5s;
+}
+
+main .who, main .hangout {
+    transform: translateX(-20%);
+}
+
+main .showcase {
+    transform: translateX(20%);
 }
 
 main .showcase {
@@ -191,6 +206,12 @@ main .who h3, main .showcase h3, main .hangout h3 {
 
 main .who p, main .showcase p, main .hangout p {
     padding-top: 30px;
+}
+
+main .who.show, main .showcase.show, main .hangout.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 /* =========================== FIND US =========================== */
@@ -255,6 +276,10 @@ footer .page-list {
     display: flex;
     float: right;
     column-gap: 40px;
+}
+
+footer .page-list.accordion i {
+    display: none;
 }
 
 footer .page-list ul {

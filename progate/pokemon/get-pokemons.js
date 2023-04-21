@@ -34,7 +34,7 @@ const border_color = {
 
 const main_types = Object.keys(bg_color);
 
-const fetchPokemons = async (pokemons_number) => {
+const getPokemons = async (pokemons_number) => {
     for (let i=1; i<=pokemons_number; i++) {
         await getPokemon(i);
     }

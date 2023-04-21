@@ -16,6 +16,10 @@
         column-gap: 40px;
         row-gap: 40px;
     }
+    
+    .find-us .gallery img {
+        height: 200px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -70,6 +74,7 @@
 
     .find-us .gallery img {
         margin: auto;
+        height: 270px;
     }
 
     footer {
@@ -118,6 +123,11 @@
         list-style: none;
     }
 
+    ul#hidden .active li {
+        padding-right: 10px;
+        border-right: solid 3px #EC9A29;
+    }
+
     ul#hidden a {
         color: var(--white);
         text-decoration: none;
@@ -126,6 +136,12 @@
 
     ul#hidden a:hover {
         background-color: #097577;
+    }
+
+    .hero {
+        height: 100vh;
+        padding: 0;
+        border-radius: 0;
     }
 
     .find-us .gallery {
@@ -140,14 +156,15 @@
         height: auto;
     }
 
-    footer, footer .page-list {
-        flex-direction: column;
-        row-gap: 30px;
+    main .menu {
+        margin: auto;
+        column-gap: 0px;
+        row-gap: 0px;
     }
 
-    main .menu {
-        grid-template-columns: 1fr;
-        margin: auto;
+    main .menu a {
+        transform: scale(.9);
+        transform-origin: 50% 50%;
     }
 
     main .loc-map {
@@ -165,5 +182,63 @@
         width: 100%;
         overflow: hidden;
         left: 50%;
+    }
+
+    footer, footer .page-list {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+
+    footer .page-list.accordion li:not(.column-title) {
+        /* display: none; */
+        padding: 0 5px;
+        height: 0;
+        overflow: hidden;
+        overflow-y: hidden;
+        transition: .3s;
+    }
+
+    footer .page-list.accordion li:not(.column-title).show {
+        /* display: block; */
+        height: 35px;
+    }
+
+    footer .page-list.accordion .column-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: large;
+    }
+
+    footer .page-list.accordion i {
+        display: block;
+        margin: auto 0;
+        transition: all .2s;
+    }
+
+    footer .page-list.accordion ul {
+        padding: 10px 15px;
+        border-bottom: 1px solid rgb(121, 121, 121);
+        cursor: pointer;
+        row-gap: 5px;
+    }
+
+    footer .page-list.accordion li {
+        color: var(--white);
+        line-height: 35px;
+    }
+
+    footer .page-list.accordion a {
+        display: block;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+
+    footer .page-list.accordion a:hover {
+        background-color: #0c242c;
     }
 }
