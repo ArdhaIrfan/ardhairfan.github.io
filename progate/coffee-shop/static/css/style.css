@@ -157,7 +157,7 @@ main .who, main .showcase, main .hangout {
     column-gap: 100px;
     opacity: 0;
     filter: blur(2px);
-    transition: all .5s;
+    transition: all .6s;
 }
 
 main .who, main .hangout {
