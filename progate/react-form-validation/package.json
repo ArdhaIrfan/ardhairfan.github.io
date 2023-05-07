@@ -2,7 +2,7 @@
   "name": "react-form-validation",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ardhairfan.github.io/progate/react-form-validation",
+  "homepage": "https://ardhairfan.github.io/react-form-validation",
   "type": "module",
   "scripts": {
     "dev": "vite",
